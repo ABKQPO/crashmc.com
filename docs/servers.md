@@ -16,6 +16,21 @@ Perhaps a server is already running on that port?
 ```
 解决方法：多个服务端不可占用同一个端口，请修改服务端的代理端口
 
+### 启动参数错误
+
+```
+Initial heap size set to a larger value than the maximum heap size
+```
+解决方法：将启动参数中的xmx（最大内存限制）参数设置为大于xms（最小启动参数）的数字
+
+### 内存不足
+
+```
+Caused by: java.lang.OutOfMemoryError: Java heap space
+```
+解决方法：将xmx参数调大并腾出更多的内存
+
+
 ## 不基于（或包含）Bukkit
 
 ### Vanilla（原版）
